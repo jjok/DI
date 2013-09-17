@@ -22,7 +22,7 @@ Example
 Dependencies
 ------------
 
-- jjok\Config
+- [jjok\Config](https://github.com/jjok/Config)
 
 
 Copyright (c) 2013 Jonathan Jefferies
