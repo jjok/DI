@@ -30,27 +30,21 @@ use jjok\Config\Config;
 /**
  * Dependency injection container.
  * @author Jonathan Jefferies
- * @version 0.1.0
+ * @version 0.2.0
  */
 class Container extends Config {
 	
 	/**
 	 * 
 	 * @param string $key
-	 * @see \jjok\Config\Config::get()
-	 */
-	public function get($key) {
-		$value = parent::get($key);
+	 * @param mixed ... Any additional parameters will be passed to the
+	 * callback.
+	 * @return mixed
+	 */	
+	public function call($key) {
+		$args = func_get_args();
+		$args[0] = $this;
 		
-		//TODO Add support for invokable
-		//if($value instanceof Closure || method_exists($value, '__invoke')) {
-		if($value instanceof Closure) {
-			$args = func_get_args();
-			$args[0] = $this;
-			
-			return call_user_func_array($value, $args);
-		}
-		
-		return $value;
+		return call_user_func_array($this->get($key), $args);
 	}
 }

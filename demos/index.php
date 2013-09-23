@@ -42,8 +42,8 @@ $container = new \jjok\DI\Container(array(
 		return new SomeDependency($param);
 	},
 	'SomeClass' => function($self) {
-		return new SomeClass($self->get('SomeDependency', 'some-param'));
+		return new SomeClass($self->call('SomeDependency', 'some-param'));
 	}
 ));
 
-var_dump($container->get('SomeClass'));
+var_dump($container->call('SomeClass'));
