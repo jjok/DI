@@ -17,6 +17,6 @@
 	}],
 	"require": {
 		"php": ">=5.3.0",
-		"jjok/config": "dev-master"
+		"jjok/config": "2.*"
 	}
 }

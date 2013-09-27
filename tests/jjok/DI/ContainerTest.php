@@ -1,6 +1,6 @@
 <?php
 
-require_once '../Config/src/jjok/Config/Config.php';
+require_once 'vendor/jjok/config/src/jjok/Config/Config.php';
 require_once 'src/jjok/DI/Container.php';
 
 class ContainerTest extends PHPUnit_Framework_TestCase {
