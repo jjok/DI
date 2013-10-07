@@ -11,10 +11,6 @@
 	"autoload": {
 		"psr-0": {"jjok\\DI\\": "src/"}
 	},
-	"repositories": [{
-		"type": "vcs",
-		"url": "https://github.com/jjok/Config"
-	}],
 	"require": {
 		"php": ">=5.3.0",
 		"jjok/config": "2.*"

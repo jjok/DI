@@ -24,7 +24,6 @@
 
 namespace jjok\DI;
 
-use Closure;
 use jjok\Config\Config;
 
 /**
@@ -35,8 +34,8 @@ use jjok\Config\Config;
 class Container extends Config {
 	
 	/**
-	 * 
-	 * @param string $key
+	 * Get the return value of a configured callback.
+	 * @param string $key The name of the value to get.
 	 * @param mixed ... Any additional parameters will be passed to the
 	 * callback.
 	 * @return mixed

@@ -1,0 +1,66 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "8171318d5f8dd23bcf62f14bee3ec247",
+    "packages": [
+        {
+            "name": "jjok/config",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jjok/Config.git",
+                "reference": "5dfe0e98802c2b42442e9ae071111a7e7d2ab074"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jjok/Config/zipball/5dfe0e98802c2b42442e9ae071111a7e7d2ab074",
+                "reference": "5dfe0e98802c2b42442e9ae071111a7e7d2ab074",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "jjok\\Config\\": "src/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jonathan Jefferies",
+                    "homepage": "http://jjok.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple configuration class.",
+            "homepage": "https://github.com/jjok/Config",
+            "support": {
+                "source": "https://github.com/jjok/Config/tree/2.0.1",
+                "issues": "https://github.com/jjok/Config/issues"
+            },
+            "time": "2013-09-25 16:21:59"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": [
+
+    ],
+    "platform": {
+        "php": ">=5.3.0"
+    },
+    "platform-dev": [
+
+    ]
+}
