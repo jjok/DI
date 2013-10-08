@@ -1,6 +1,7 @@
 {
 	"name": "jjok/di",
 	"description": "Super-simple dependency injection for PHP.",
+	"keywords": ["dependency injection", "DI"],
 	"license": "MIT",
 	"homepage": "https://github.com/jjok/DI",
 	"authors": [{
