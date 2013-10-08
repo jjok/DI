@@ -36,7 +36,7 @@ class Container extends Config {
 	/**
 	 * Get the return value of a configured callback.
 	 * @param string $key The name of the value to get.
-	 * @param mixed ... Any additional parameters will be passed to the
+	 * @param mixed $args,... Any additional parameters will be passed to the
 	 * callback.
 	 * @return mixed
 	 */	
