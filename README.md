@@ -15,11 +15,11 @@ Example
         	return new SomeDependency($param);
         },
         'SomeClass' => function($self) {
-        	return new SomeClass($self->get('SomeDependency', 'some-param'));
+        	return new SomeClass($self->call('SomeDependency', 'some-param'));
         }
     ));
     
-    $some_object = $container->get('SomeClass');
+    $some_object = $container->call('SomeClass');
 
 Dependencies
 ------------
